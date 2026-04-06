@@ -1,0 +1,202 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Inter', sans-serif;
+}
+
+nav{
+    background-color: rgb(245, 243, 255);
+    border-bottom: 1px solid rgb(221, 214, 255);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .logo-title{
+        display: flex;
+        /* background-color: aqua; */
+        gap: 15px;
+        align-items: center;
+        .logo-box{
+            background-color: rgb(142, 81, 255);
+            width: fit-content;
+            height: fit-content;
+            padding: 10px;
+            border-radius: 10px;
+            svg{
+                height: 20px;
+                width: 20px;
+                color: white;
+            }
+        }
+        h1{
+            font-size: 25px;
+        }
+    }
+    .links{
+        /* background-color: aqua; */
+        display: flex;
+        gap: 45px;
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 17px;
+            &:hover{
+                color: rgb(142, 81, 255);
+                border-bottom: 2px solid rgb(142, 81, 255);
+            }
+            &:first-child{
+                color: rgb(142, 81, 255);
+                border-bottom: 2px solid rgb(142, 81, 255);
+            }
+        }
+    }
+    }
+}
+
+article{
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    .product-container{
+        display: flex;
+        justify-content: center;
+        /* background-color: red; */
+        padding: 0 200px;
+        gap: 60px;
+        width: 100%;
+        .img-box{
+            width: 35%;
+            padding: 15px;
+            border: 1px solid rgb(224, 226, 230);
+            border-radius: 25px;
+            position: relative;
+            .img-background{
+                height: 100%;
+                width: 100%;
+                background-image: url(./Images/hero-img-CYauTLx2.png);
+                background-size: cover;
+            }
+            /* img{
+                width: 100%;
+                border-radius: 25px;
+                height: 100%;
+            } */
+            .discount-percentage{
+                position: absolute;left: 35px; top: 35px;
+                background-color: rgb(142, 81, 255);
+                color: aliceblue;
+                padding: 8px 12px;
+                border-radius: 25px;
+                font-size: 12px;
+            }
+        }
+        .info-box{
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+            /* background-color: aqua; */
+            justify-content: space-between;
+            .three-features{
+                /* background-color: blue; */
+                width: 60%;
+                display: flex;
+                justify-content: space-between;
+                .feature{
+                    background-color: rgb(142, 81, 255);
+                    color: aliceblue;
+                    padding: 5px 8px;
+                    border-radius: 15px;
+                    font-size: 15px;
+                }
+            }
+            .product-name{
+                font-size: 50px;
+                /* margin-top: 10px; */
+                span{
+                    color: rgb(142, 81, 255);
+                }
+            }
+            .description{
+                /* background-color: aqua; */
+                width: 100%;
+                font-size: 18px;
+                font-weight: lighter;
+                /* margin-top: 15px; */
+            }
+            .pricing-box{
+                /* background-color: aqua; */
+                width: 70%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: start;
+                align-items: center;
+                .new-price{
+                    width: 30%;
+                    font-size: 26px;
+                    font-weight: bolder;
+                }
+                .old-price{
+                    width: 30%;
+                    font-size: 22px;
+                    font-weight: lighter;
+                    text-decoration-line: line-through;
+                }
+                .discount{
+                    width: 25%;
+                    font-size: 12px;
+                    background-color: rgb(255, 226, 226);
+                    color: rgb(231, 0, 11);
+                    text-align: center;
+                    padding: 3px 0;
+                    border-radius: 15px;
+                }
+                .other-payment{
+                    width: 100%;
+                    font-size: 15px;
+                    margin-top: 15px;
+                    /* background-color: aqua; */
+                }
+            }
+            .button-box{
+                /* background-color: aqua; */
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                width: 100%;
+                button{
+                    padding: 18px;
+                    display: flex;
+                    justify-content: center;
+                    border-radius: 25px;
+                    svg{
+                        width: 18px;
+                        margin-right: 8px;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                button:first-child{
+                    background-color: rgb(142, 81, 255);
+                    color: white;
+                    border: 2px solid black;
+                    svg{
+                        fill: white;
+                    }
+                }
+                button:nth-child(2){
+                    border: 1px solid rgb(209, 213, 220);
+                    background-color: white;
+                }
+            }
+        }
+}
+}
