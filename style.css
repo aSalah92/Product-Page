@@ -47,14 +47,28 @@ nav{
             text-decoration: none;
             color: black;
             font-size: 17px;
+            position: relative;
+            transition: 0.5s;
+            &::before{
+                content: '';
+                width: 0;
+                height: 3px;
+                background-color: rgb(142, 81, 255);;
+                transition: 0.5s;
+                position: absolute; bottom: -3px;
+            }
             &:hover{
                 color: rgb(142, 81, 255);
-                border-bottom: 2px solid rgb(142, 81, 255);
             }
-            &:first-child{
-                color: rgb(142, 81, 255);
-                border-bottom: 2px solid rgb(142, 81, 255);
+            &:hover::before{
+                width: 100%;
             }
+        }
+        a:first-child{
+            color: rgb(142, 81, 255);;
+        }
+        a:first-child::before{
+            width: 100%;
         }
     }
     }
