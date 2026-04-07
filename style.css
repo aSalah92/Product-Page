@@ -214,3 +214,195 @@ article{
         }
 }
 }
+
+section{
+    .compare-part{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(242, 240, 255);
+        margin-top: 140px;
+        padding-top: 100px;
+        gap: 25px;
+        .title{
+            span{
+                color: rgb(142, 81, 255);
+            }
+        }
+        .table{
+            background-color: white;
+            border: 2px solid rgb(209, 213, 220);
+            width: 70%;
+            height: fit-content;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .container{
+                /* background-color: antiquewhite; */
+                width: 95%;
+                height: fit-content;
+                display: flex;
+                margin: 30px 0;
+                .columns-parts{
+                    width: calc(75%/4);
+                    height: 100%;
+                    /* background-color: brown;
+                    border: 1px solid black; */
+                    .rows{
+                        border-bottom: 1px solid rgb(218, 222, 227);
+                        height: 80px;
+                        padding: 25px;
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 10px;
+                        justify-content: center;align-items: center;
+                        font-size: 15px;
+                        font-weight: 100;
+                        color: gray;
+                        .stars{
+                            display: flex;
+                            svg{
+                                width: 21px;
+                                fill: rgb(253, 199, 0);
+                            }
+                        }
+                        .numbers{
+                            color: black;
+                        }
+                        .our-product-boxes{
+                            background-color: rgb(142, 81, 255);
+                            color: white;
+                            padding: 6px 12px;
+                            border-radius: 20px;
+                        }
+                    }
+                    .prices{
+                        color: black;
+                        font-size: 18px;
+                    }
+                    .rows:last-child{
+                        border: none;
+                    }
+                    .titles{
+                        height: 100px;
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: black;
+                        p{
+                            font-size: 15px;
+                            color: gray;
+                        }
+                    }
+                }
+                .columns-parts:first-child{
+                    width: 25%;
+                    .rows{
+                        align-items: flex-start;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        gap: 5px;
+                        div{
+                            svg{
+                                width: 20px;
+                            }
+                        }
+                    }
+                    .rows:nth-child(2){
+                        svg{
+                            fill: rgb(0, 184, 219);
+                        }
+                    }
+                    .rows:nth-child(3){
+                        svg{
+                            fill: rgb(0, 187, 167)
+                        }
+                    }
+                    .rows:nth-child(4){
+                        svg{
+                            fill: rgb(0, 201, 80)
+                        }
+                    }
+                    .rows:nth-child(5){
+                        svg{
+                            fill: rgb(255, 105, 0)
+                        }
+                    }
+                    .rows:nth-child(6){
+                        svg{
+                            fill: rgb(251, 44, 54)
+                        }
+                    }
+                    .rows:nth-child(7){
+                        svg{
+                            fill: rgb(0, 166, 244)
+                        }
+                    }
+                    .rows:nth-child(8){
+                        svg{
+                            fill: rgb(97, 95, 255)
+                        }
+                    }
+                    .rows:nth-child(9){
+                        svg{
+                            fill: rgb(43, 127, 255)
+                        }
+                    }
+                    .rows:nth-child(10){
+                        svg{
+                            fill: rgb(242, 187, 32);
+                            width: 12px;
+                        }
+                    }
+                }
+                .columns-parts:nth-child(2){
+                    background-color: rgb(237, 233, 254);
+                    border-radius: 25px;
+                    .titles{
+                        color: rgb(142, 81, 255);
+                        P{
+                            color: rgb(142, 81, 255);
+                        }
+                    }
+                    .rows:nth-child(10){
+                        color: rgb(142, 81, 255);
+                        font-size: 18px;
+                    }
+                }
+                .columns-parts:nth-child(3){
+                    .rows:last-child{
+                        .stars{
+                            svg:last-child{
+                                fill: rgb(209, 213, 220);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .winner{
+            background-color: white;
+            border: 2px solid rgb(209, 213, 220);
+            border-radius: 25px;
+            padding: 25px;
+            width: 20%;
+            display: flex;
+            justify-content: space-around;
+            color: rgb(0, 201, 80);
+            margin-top: 30px;
+            svg{
+                fill: rgb(0, 201, 80);
+                width: 30px;
+            }
+            .writings{
+                h3{
+                    font-size: 19px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
