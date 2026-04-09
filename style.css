@@ -192,18 +192,20 @@ article{
                     display: flex;
                     justify-content: center;
                     border-radius: 25px;
+                    transition: 0.25s;
                     svg{
                         width: 18px;
                         margin-right: 8px;
                     }
                     &:hover{
                         cursor: pointer;
+                        transform: scale(1.07);
                     }
                 }
                 button:first-child{
                     background-color: rgb(142, 81, 255);
                     color: white;
-                    border: 2px solid black;
+                    border: none;
                     svg{
                         fill: white;
                     }
@@ -639,6 +641,147 @@ section{
                         }
                     }
                 }
+            }
+        }
+    }
+    .complementary-part{
+        background-color: rgb(247, 245, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 150px 0;
+        gap: 100px;
+        .title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            h1{
+                span{
+                    color: rgb(127, 34, 254);
+                }
+            }
+        }
+        .products{
+            width: 75%;
+            display: flex;
+            justify-content: space-evenly;
+            .product-box{
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                padding: 25px;
+                border: 2px solid rgb(229, 231, 235);
+                border-radius: 25px;
+                .pic{
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    height: 180px;
+                    border-radius: 25px;
+                    transition: 0.5s;
+                }
+                .name{
+                    background-color: transparent;
+                }
+                .description-p{
+                    background-color: transparent;
+                }
+                .price-add-btn{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .price{
+                        font-size: 25px;
+                    }
+                    .add-btn{
+                        padding: 14px;
+                        background-color: rgb(142, 81, 255);
+                        color: white;
+                        border: none;
+                        border-radius: 25px;
+                        font-size: 15px;
+                    }
+                }
+                &:hover .pic{
+                    transform: scale(1.05);
+                }
+            }
+            .product-box:first-child{
+                .pic{
+                    background-image: url(./Images/related-products-1-D4JR6uDa.png);
+                    position: relative;
+                    .description-box{
+                        background-color: rgb(0, 187, 167);
+                        color: white;
+                        font-size: 13px;
+                        width: fit-content;
+                        padding: 6px;
+                        border-radius: 15px;
+                        position: absolute; top: 5%;left: 5%;
+                    }   
+                }
+            }
+            .product-box:nth-child(2){
+                .pic{
+                    background-image: url(./Images/related-products-2-OSxMogX9.png);
+                    position: relative;
+                    .description-box{
+                        background-color: rgb(0, 201, 80);
+                        color: white;
+                        font-size: 13px;
+                        width: fit-content;
+                        padding: 6px;
+                        border-radius: 15px;
+                        position: absolute; top: 5%;left: 5%;
+                    }   
+                    
+                }
+            }
+            .product-box:nth-child(3){
+                .pic{
+                    background-image: url(./Images/related-products-3-DDld9RDW.png);
+                    position: relative;
+                    .description-box{
+                        background-color: rgb(0, 184, 219);
+                        color: white;
+                        font-size: 13px;
+                        width: fit-content;
+                        padding: 6px;
+                        border-radius: 15px;
+                        position: absolute; top: 5%;left: 5%;
+                    }   
+                    
+                }
+            }
+            .product-box:nth-child(4){
+                .pic{
+                    background-image: url(./Images/related-products-4-bI1kHqI6.png);
+                    position: relative;
+                    .description-box{
+                        background-color: rgb(255, 105, 0);
+                        color: white;
+                        font-size: 13px;
+                        width: fit-content;
+                        padding: 6px;
+                        border-radius: 15px;
+                        position: absolute; top: 5%;left: 5%;
+                    }   
+                    
+                }
+                }
+        }
+        .view-all-btn{
+            padding: 15px 25px;
+            color: rgb(142, 81, 255);
+            border: 2px solid rgb(142, 81, 255);
+            border-radius: 50px;
+            font-size: 18px;
+            &:hover{
+                cursor: pointer;
+                background-color: rgb(142, 81, 255);
+                color: white;
             }
         }
     }
