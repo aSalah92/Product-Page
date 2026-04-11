@@ -5,6 +5,9 @@
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     font-family: 'Inter', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 nav{
     background-color: rgb(245, 243, 255);
